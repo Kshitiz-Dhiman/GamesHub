@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/tictactoe.css">
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+    <div class="container">
+        <div class="game-info">
+            <h2 class="status">Player X's Turn</h2>
+            <div class="score">
+                <div class="score-box">
+                    <h3>Player X</h3>
+                    <span class="x-score">0</span>
+                </div>
+                <div class="score-box">
+                    <h3>Ties</h3>
+                    <span class="ties">0</span>
+                </div>
+                <div class="score-box">
+                    <h3>Player O</h3>
+                    <span class="o-score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <button class="btn restart-btn">Restart Game</button>
+    </div>
+    <script src="../script/tictactoe.js"></script>
+</body>
+
+</html>

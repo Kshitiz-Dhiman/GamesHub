@@ -235,32 +235,59 @@ subheading {
 }
 .card-container {
     display: flex;
-    gap: 20px;
-    height: 300px;
+    gap: 24px;
+    height: 320px;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding: 10px 5px;
+    margin: 0 -5px;
 }
 
 .card {
-    height: 250px;
-    width: 220px;
+    height: 280px;
+    width: 240px;
     display: flex;
     flex-direction: column;
-    background-color: #1a1b1f;
-    border-radius: 20px;
-    border-radius: 10px;
+    background-color: #1e293b;
+    border-radius: 16px;
     flex-shrink: 0;
+    border: 1px solid #2d3c54;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #60a5fa;
+}
+
 .card img {
     width: 100%;
-    height: 60%;
+    height: 160px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    transition: all 0.3s ease;
 }
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
 .card .container {
-    padding: 10px;
-    text-align: center;
+    padding: 1rem;
+    text-align: left;
+}
+
+.card .container h4 {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .container p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    font-weight: normal;
 }
 .card-container::-webkit-scrollbar {
     height: 8px;
