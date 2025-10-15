@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Box - GamesHub</title>
+    <link rel="stylesheet" href="../styles/clickbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">← Back to Games</a>
+    <div class="container">
+        <div class="game-info">
+            <h1 class="status">Click the Box</h1>
+            <div class="score">
+                <div class="score-box">
+                    <h3>Score</h3>
+                    <span class="current-score">0</span>
+                </div>
+                <div class="score-box">
+                    <h3>High Score</h3>
+                    <span class="high-score">0</span>
+                </div>
+                <div class="score-box">
+                    <h3>Time Left</h3>
+                    <span class="time-left">30</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="target-box"></div>
+            <div class="overlay">
+                <div class="message">Click Start to Begin!</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn start-btn">Start Game</button>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <ul>
+                <li>Click the colored box as quickly as you can</li>
+                <li>Each successful click gives you points</li>
+                <li>The box moves faster as you score more</li>
+                <li>Game lasts for 30 seconds</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../script/clickbox.js"></script>
+</body>
+
+</html>

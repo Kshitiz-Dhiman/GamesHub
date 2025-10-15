@@ -34,7 +34,6 @@ class TypingGame {
         this.speedElement.textContent = '0';
         this.accuracyElement.textContent = '100';
 
-        // Get random quote
         this.quote = quotes[Math.floor(Math.random() * quotes.length)];
         this.quoteDisplay.innerHTML = this.quote.split('').map(char =>
             `<span>${char}</span>`
@@ -70,11 +69,9 @@ class TypingGame {
             }
         });
 
-        // Update accuracy
         const accuracy = Math.round((correctChars / arrayValue.length) * 100) || 100;
         this.accuracyElement.textContent = accuracy;
 
-        // Check if quote is completed
         if (correct && arrayValue.length === arrayQuote.length) {
             this.input.disabled = true;
             clearInterval(this.timer);
@@ -87,7 +84,6 @@ class TypingGame {
         const currentTime = Math.floor((new Date() - this.startTime) / 1000);
         this.timerElement.textContent = currentTime;
 
-        // Calculate WPM
         const words = this.input.value.length / 5;
         const minutes = currentTime / 60;
         const wpm = Math.round(words / minutes) || 0;

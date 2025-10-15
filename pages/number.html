@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game - GamesHub</title>
+    <link rel="stylesheet" href="../styles/number.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">← Back to Games</a>
+    <div class="container">
+        <div class="game-info">
+            <h1 class="status">Guess the Number!</h1>
+            <div class="score">
+                <div class="score-box">
+                    <h3>Best Score</h3>
+                    <span class="best-score">-</span>
+                </div>
+                <div class="score-box">
+                    <h3>Current Attempts</h3>
+                    <span class="attempts">0</span>
+                </div>
+                <div class="score-box">
+                    <h3>Range</h3>
+                    <span class="range">1-100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <input type="number" class="guess-input" placeholder="Enter your guess" min="1" max="100">
+            <button class="btn guess-btn">Guess</button>
+            <p class="hint">Start guessing!</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn restart-btn">New Game</button>
+        </div>
+
+        <div class="history">
+            <h3>Previous Guesses</h3>
+            <div class="guess-list"></div>
+        </div>
+    </div>
+    <script src="../script/number.js"></script>
+</body>
+
+</html>
