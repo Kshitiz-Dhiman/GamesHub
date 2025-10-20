@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - GamesHub</title>
+    <link rel="stylesheet" href="../styles/memory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Memory Card Game</h1>
+            <div class="stats">
+                <div class="moves">Moves: <span id="moves">0</span></div>
+                <div class="timer">Time: <span id="time">0:00</span></div>
+            </div>
+            <button id="restart">Restart Game</button>
+        </header>
+
+        <div class="game-board">
+            <!-- Cards will be inserted here by JavaScript -->
+        </div>
+
+        <div class="win-modal" id="winModal">
+            <div class="modal-content">
+                <h2>Congratulations! 🎉</h2>
+                <p>You won in <span id="finalMoves">0</span> moves</p>
+                <p>Time taken: <span id="finalTime">0:00</span></p>
+                <button id="playAgain">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <a href="../index.html" class="home-btn">Back to Home</a>
+    <script src="../script/memory.js"></script>
+</body>
+
+</html>
