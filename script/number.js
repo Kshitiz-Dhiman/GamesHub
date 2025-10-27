@@ -1,6 +1,5 @@
 class NumberGuessingGame {
     constructor() {
-        // UI Elements
         this.guessInput = document.querySelector('.guess-input');
         this.guessBtn = document.querySelector('.guess-btn');
         this.restartBtn = document.querySelector('.restart-btn');
@@ -10,7 +9,7 @@ class NumberGuessingGame {
         this.guessList = document.querySelector('.guess-list');
         this.status = document.querySelector('.status');
 
-        // Game state
+
         this.minNumber = 1;
         this.maxNumber = 100;
         this.targetNumber = null;
@@ -18,12 +17,12 @@ class NumberGuessingGame {
         this.bestScore = localStorage.getItem('numberGameBestScore') || '-';
         this.gameActive = true;
 
-        // Initialize the game
+
         this.initGame();
     }
 
     initGame() {
-        // Set up event listeners
+
         this.guessBtn.addEventListener('click', () => this.handleGuess());
         this.restartBtn.addEventListener('click', () => this.restartGame());
         this.guessInput.addEventListener('keypress', (e) => {
@@ -32,25 +31,25 @@ class NumberGuessingGame {
             }
         });
 
-        // Initialize game state
+
         this.targetNumber = Math.floor(Math.random() * (this.maxNumber - this.minNumber + 1)) + this.minNumber;
         this.attempts = 0;
         this.gameActive = true;
         this.updateDisplay();
 
-        // Clear previous guesses
+
         this.guessList.innerHTML = '';
         this.hint.textContent = 'Start guessing!';
         this.status.textContent = 'Guess the Number!';
 
-        // Set up input
+
         this.guessInput.value = '';
         this.guessInput.min = this.minNumber;
         this.guessInput.max = this.maxNumber;
         this.guessInput.disabled = false;
         this.guessBtn.disabled = false;
 
-        // Focus input for immediate play
+
         this.guessInput.focus();
     }
 
@@ -93,7 +92,7 @@ class NumberGuessingGame {
         this.guessInput.disabled = true;
         this.guessBtn.disabled = true;
 
-        // Update best score
+
         if (this.bestScore === '-' || this.attempts < parseInt(this.bestScore)) {
             this.bestScore = this.attempts;
             localStorage.setItem('numberGameBestScore', this.attempts);

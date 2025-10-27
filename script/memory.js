@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         });
 
-        // Reset game state
         moves = 0;
         timeElapsed = 0;
         matchedPairs = 0;
@@ -144,10 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
         winModal.classList.remove('active');
     }
 
-    // Event listeners
     restartButton.addEventListener('click', initGame);
     playAgainButton.addEventListener('click', initGame);
 
-    // Initialize the game
     initGame();
 });

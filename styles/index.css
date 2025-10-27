@@ -18,7 +18,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Navbar Styles */
 .navbar {
     grid-area: nav;
     display: flex;
@@ -38,7 +37,6 @@ body {
 }
 
 
-/* Navbar Items */
 .nav-items {
     display: flex;
     align-items: center;
@@ -108,7 +106,6 @@ body {
 
 
 
-/* Sidebar Styles */
 .sidebar {
     grid-area: sidebar;
     background: #1e293b;
@@ -149,7 +146,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Main Content Styles */
 .main-content {
     grid-area: main;
     padding: 2rem;
@@ -165,7 +161,6 @@ body {
     animation: fadeIn 0.5s ease forwards;
 }
 
-/* Featured Section Styles */
 .featured-section {
     margin-bottom: 3rem;
 }
@@ -231,7 +226,6 @@ body {
     box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
 }
 
-/* Games Grid Styles */
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -305,7 +299,6 @@ body {
 .game-card:hover .play-button {
     text-decoration: underline;
 }
-/* Footer Styles */
 .footer {
     grid-area: footer;
     text-align: center;
@@ -315,13 +308,11 @@ body {
     color: #94a3b8;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     body {
         grid-template-areas:
